@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nutrição</title>
+	<meta charset="utf-8">
+	<!-- Global Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- Inicio Navegação -->
+	   <main>
+   				<input type="text" name="filtrar" id="filtrar-tabela" placeholder="Filtrar">
+	   		<form>
+	   			<legend>adicionar novo paciente</legend>
+	   			<span id="mensagem-erro">Preencha todos os campos</span>
+	   			<input type="text" name="nome" placeholder="Nome"><br>
+	   			<input type="number" name="peso" placeholder="Peso(kg)"><br>
+	   			<input type="text" name="altura" placeholder="Altura(m)"><br>
+	   			<input type="number" name="gordura" placeholder="Gordura(%)"><br>
+	   			<button id="adicionar-paciente">Adicionar</button>
+	   		</form>
+
+	   		<div class="tabela">
+	   		<table>
+	   			<thead>
+	   				<tr>
+	   					<th>Nome</th>
+						<th>Peso</th>
+						<th>Altura</th>
+						<th>Gordura Corporal</th>
+						<th>IMC</th>
+	   				</tr>
+	   			</thead>
+	   			<tbody id="tabela-pacientes">
+						<tr class="paciente">
+							<td class="info-nome">Kaique</td>
+							<td class="info-peso">60</td>
+							<td class="info-altura">1.71</td>
+							<td class="info-gordura">20</td>
+							<td class="info-imc">0</td>
+						</tr>
+					</tbody>
+	   		</table>
+	   		</div>
+	   		<div class="abrir">
+	   			-
+	   		</div>
+	   </main>
+
+	   <script src="./js/abrir-form.js"></script>
+	   <script src="./js/calcular-imc.js"></script>
+	   <script src="./js/form.js"></script>
+	   <script src="./js/remover-paciente.js"></script>
+	   <script src="./js/filtrar.js"></script>
+	   <script src="./js/buscar-paciente.js"></script>
+	<!-- Fim Navegação -->
+</body>
+</html>
